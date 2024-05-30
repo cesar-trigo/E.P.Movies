@@ -1,28 +1,42 @@
-const $form = document.getElementById("login"); // Asumiendo que el formulario tiene el id 'myForm'
+const $form = document.getElementById("login");
 
-const login = $form => {
-  $form.addEventListener("submit", event => {
-    event.preventDefault();
-    const formData = new FormData($form);
-    const data = Object.fromEntries(formData.entries());
-    console.log(data);
-    Swal.fire({
-      title: "Custom width, padding, color, background.",
-      position: "top-end",
-      width: 600,
-      padding: "0rem",
-      color: "#716add",
-      background: "#fff",
-      backdrop: `
-        rgba(0,0,123,0.4)
-        url("/images/nyan-cat.gif")
-        left top
-        no-repeat
-      `,
-    });
-  });
+//envio de formulario
+$form.addEventListener("submit", event => {
+  event.preventDefault();
+  const formData = new FormData($form);
+  const data = Object.fromEntries(formData);
+  inputValidation(data);
+});
+
+//validacion de campos
+const inputValidation = dt => {
+  const emptyFields = Object.entries(dt)
+    .filter(([key, value]) => value === "")
+    .map(([key]) => key);
+
+  if (emptyFields.length > 0) {
+    alert(emptyFields);
+  }
 };
 
-login($form);
-
-function name(params) {}
+//alerta
+const alert = key => {
+  const keys = key.join(" - ");
+  const verb = key.length === 1 ? "está vacio" : "están vacios";
+  Swal.fire({
+    text: `${keys}, ${verb}`,
+    position: "top-end",
+    toast: true,
+    timer: 4000,
+    timerProgressBar: true,
+    showConfirmButton: false,
+    showCloseButton: true,
+    showClass: {
+      popup: "",
+    },
+    padding: ".5rem",
+    customClass: {
+      popup: "colored-toast",
+    },
+  });
+};

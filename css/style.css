@@ -196,4 +196,9 @@ footer {
 .a-footer {
   text-decoration: none;
   color: #ffffff;
+}
+
+.colored-toast {
+  background: linear-gradient(to right, #6441a5, #2a0845) !important;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
