@@ -6,6 +6,10 @@ $login.addEventListener("submit", event => {
   const formData = new FormData($login);
   const data = Object.fromEntries(formData);
   inputValidation(data);
+
+  if (inputValidation(data).length === 0) {
+    window.location.href = "../index.html";
+  }
 });
 
 //validacion de campos
@@ -17,6 +21,7 @@ const inputValidation = dt => {
   if (emptyFields.length > 0) {
     alert(emptyFields);
   }
+  return emptyFields;
 };
 
 //alerta
