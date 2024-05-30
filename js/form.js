@@ -1,9 +1,9 @@
-const $form = document.getElementById("login");
+const $login = document.getElementById("login");
 
 //envio de formulario
-$form.addEventListener("submit", event => {
+$login.addEventListener("submit", event => {
   event.preventDefault();
-  const formData = new FormData($form);
+  const formData = new FormData($login);
   const data = Object.fromEntries(formData);
   inputValidation(data);
 });
@@ -22,9 +22,9 @@ const inputValidation = dt => {
 //alerta
 const alert = key => {
   const keys = key.join(" - ");
-  const verb = key.length === 1 ? "está vacio" : "están vacios";
+  const text = key.length === 1 ? "is empty" : "they are empty";
   Swal.fire({
-    text: `${keys}, ${verb}`,
+    text: `${keys}, ${text}`,
     position: "top-end",
     toast: true,
     timer: 4000,
