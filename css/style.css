@@ -17,6 +17,8 @@
   background-color: rgba(246, 246, 246, 0.0392156863);
   border-radius: 1rem;
   margin: 2rem 0rem;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
 }
 .content-card-api div div {
   display: grid;
