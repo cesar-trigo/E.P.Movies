@@ -5,9 +5,9 @@
   width: 100%;
   justify-content: center;
   background:
-    url(../assets/img/img-noise-1080x500.png),
-    linear-gradient(to top, #181818, #000000);
-  background-attachment: fixed;
+    linear-gradient(to top, #13151682, #131516ac),
+    url(../assets/img/img-noise-1080x500.png);
+  background-size: contain;
 }
 
 .content-card-api {
@@ -15,7 +15,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 2.2rem;
-  margin: 2rem;
+  padding: 2rem;
+  background-color: #f6f6f60a;
+  border-radius: 1rem;
+  margin: 2rem 0rem;
 
   div {
     div {

@@ -4,8 +4,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  background: url(../assets/img/img-noise-1080x500.png), linear-gradient(to top, #181818, #000000);
-  background-attachment: fixed;
+  background: linear-gradient(to top, rgba(19, 21, 22, 0.5098039216), rgba(19, 21, 22, 0.6745098039)), url(../assets/img/img-noise-1080x500.png);
+  background-size: contain;
 }
 
 .content-card-api {
@@ -13,7 +13,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 2.2rem;
-  margin: 2rem;
+  padding: 2rem;
+  background-color: rgba(246, 246, 246, 0.0392156863);
+  border-radius: 1rem;
+  margin: 2rem 0rem;
 }
 .content-card-api div div {
   display: grid;
@@ -110,7 +113,7 @@ header {
 .main-index {
   display: flex;
   min-height: 80vh;
-  background-color: rgb(70, 39, 100);
+  background-color: #000000;
 }
 
 .content-section {
