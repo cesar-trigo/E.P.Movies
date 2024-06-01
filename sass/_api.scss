@@ -4,7 +4,10 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #131516;
+  background:
+    url(../assets/img/img-noise-1080x500.png),
+    linear-gradient(to top, #181818, #000000);
+  background-attachment: fixed;
 }
 
 .content-card-api {
