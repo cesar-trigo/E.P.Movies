@@ -1,0 +1,55 @@
+@use "variables" as*;
+
+.content-section-api {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(33, 32, 32);
+}
+
+.content-card-api {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.2rem;
+  margin: 2rem;
+
+  div {
+    div {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+
+      p:nth-last-child(3) {
+        background-color: $estado-anime-carta;
+        color: $texto-cartas;
+        border-radius: .2rem;
+        padding: 3px;
+        width: 70%;
+        text-align: center;
+      }
+
+      p:nth-last-child(2) {
+        background-color: $tipo-anime-carta;
+        color: $texto-cartas;
+        border-radius: .2rem;
+        padding: 3px;
+        width: 100%;
+        text-align: center;
+      }
+
+      p:nth-last-child(1) {
+        grid-column: 1/3;
+        color: $texto-cartas;
+      }
+    }
+  }
+}
+
+.img-card-api {
+  border-radius: .5rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
