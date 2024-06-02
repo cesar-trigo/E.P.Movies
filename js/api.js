@@ -1,4 +1,5 @@
 const $contentCardApi = document.getElementById("contentCardApi");
+const $loading = document.getElementById("loading");
 
 async function getAnimes() {
   try {
