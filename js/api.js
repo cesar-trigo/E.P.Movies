@@ -8,6 +8,8 @@ async function getAnimes() {
     console.log(data.data);
   } catch (error) {
     console.error(error);
+  } finally {
+    $loading.style.display = "none";
   }
 }
 
@@ -16,7 +18,7 @@ getAnimes();
 const createCards = data => {
   const card = document.createElement("div");
   card.innerHTML = `
-  <img class="img-card-api" src=${data.images.webp.image_url} alt=${data.title}>
+  <img class="img-card-api" src=${data.images.webp.image_url} alt=${data.title} loading="lazy">
   <div>
     <p>Finalizado</p>
     <p>${data.type}</p>
