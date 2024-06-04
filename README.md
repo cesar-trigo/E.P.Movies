@@ -1,3 +1,3 @@
-*Proyect*
+*front*
   
-  static movie page
+   movie page
