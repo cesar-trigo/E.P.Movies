@@ -270,3 +270,12 @@ footer {
   background: linear-gradient(to right, #6441a5, #2a0845) !important;
   color: white;
 }/*# sourceMappingURL=style.css.map */
+
+.error{
+  background-color: rgb(211, 120, 120);
+  color: black;
+  padding: 10px;
+  width: 95%;
+  border-radius:5px;
+  margin: 20px auto;
+}
