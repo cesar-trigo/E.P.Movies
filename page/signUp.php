@@ -39,16 +39,22 @@
   <main class="main-index">
     <article class="content-section">
       <section class="content-title-dem">
-        <form id="login" action="">
+        <form id="login" action="../php/login-register/register.php" method="POST">
           <h2 class="h1">Sign up</h2>
+          <!-- msj de error y success -->
+          <?php 
+            if (isset($_GET['error'])) { ?>
+                <p class="error"><?php echo $_GET['error']; ?></p>
+          <?php } ?>
+          
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" required placeholder="Name">
+          <input type="text" name="name" id="name"  placeholder="Name">
           <label for="lastName">Last Name</label>
-          <input type="text" name="lastName" id="lastName" required placeholder="Last Name">
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email">
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" required placeholder="Password">
+          <input type="password" name="password" id="password" placeholder="Password">
           <button type="submit">Sign up</button>
         </form>
       </section>
