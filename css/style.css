@@ -57,13 +57,54 @@
   height: 70%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .loading {
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
+}
+
+.content-table {
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+caption {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+  width: 18rem;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 60%;
+  height: 30%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  background-color: rgba(94, 94, 94, 0.203);
+}
+
+thead > tr > th {
+  margin-left: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  height: 50%;
+}
+
+thead > tr {
+  background-color: #9f3647;
+}
+
+tbody > tr > th {
+  color: white;
+}
+
+.th-data {
+  font-size: 0.8rem;
 }
 
 * {

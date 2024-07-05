@@ -1,0 +1,71 @@
+<?php include("../php/connect.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=32&id=CYNJXdNSRvrJ&format=png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Api - CAC-Movies</title>
+</head>
+<body>
+    <header class="header">
+        <div class="content-icon-nav">
+            <div>
+                <a class="icon-inic" href="#">CAC-Movies</a>
+            </div>
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="#">Api</a></li>
+                    <li><a href="../index.html">home</a></li>
+                    <li class="li-inic-header"><a class="ancor-inic-header" href="./signIn.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-index">
+        <article class="content-section-api content-table">
+            <?php
+            $query = "SELECT * FROM usuarios";
+            if ($result = mysqli_query($connect, $query)): ?>
+                <table>
+                <caption>All users table.</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php while ($row = $result->fetch_assoc()): ?>
+                            <tr>
+                                <th class="th-data" ><?php echo htmlspecialchars($row["name"]); ?></th>
+                                <th class="th-data" ><?php echo htmlspecialchars($row["lastName"]); ?></th>
+                                <th class="th-data" ><?php echo htmlspecialchars($row["email"]); ?></th>
+                            </tr>
+                        <?php endwhile; ?>
+                    </tbody>
+                </table>
+            <?php else: ?>
+                <p>Error en la consulta: <?php echo mysqli_error($connect); ?></p>
+            <?php endif; ?>
+        </article>
+    </main>
+    <footer>
+        <div class="content-footer">
+            <a class="icon-inic" href="#">Terms and Conditions</a>
+            <a class="icon-inic" href="#">Frequent questions</a>
+            <a class="icon-inic" href="#">Ayuda</a>
+            <a class="ancor-inic-header a-footer" href="#">Movie Manager</a>
+        </div>
+    </footer>
+    <script src="../js/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
