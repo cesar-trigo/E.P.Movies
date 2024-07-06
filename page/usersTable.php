@@ -13,20 +13,39 @@
     <title>Api - CAC-Movies</title>
 </head>
 <body>
-    <header class="header">
-        <div class="content-icon-nav">
-            <div>
-                <a class="icon-inic" href="#">CAC-Movies</a>
-            </div>
-            <nav class="nav-header">
-                <ul>
-                    <li><a href="#">Api</a></li>
-                    <li><a href="../index.html">home</a></li>
-                    <li class="li-inic-header"><a class="ancor-inic-header" href="./signIn.html">Sign In</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="header">
+    <div class="content-icon-nav">
+      <div>
+        <a class="icon-inic" href="#">CAC-MOVIES</a>
+      </div>
+
+      <nav class="nav-header">
+        <ul>
+          <li class="li-inic-header">
+            <a class="ancor-inic-header" href="./signIn.html">Sign In</a>
+          </li>
+          <li class="li-inic-header">
+            <a class="ancor-inic-header" href="./signUp.php">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content-secont-nav">
+      <nav class="nav-header">
+        <ul>
+          <li>
+            <a class="ancor-sec-header" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="ancor-sec-header" href="./api.html">Api</a>
+          </li>
+          <li>
+            <a class="ancor-sec-header" href="#">Table</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <main class="main-index">
         <article class="content-section-api content-table">
             <?php
@@ -43,17 +62,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while ($row = $result->fetch_assoc()): ?>
+                        <?php while ($row = $result->fetch_assoc()) { ?>
                             <tr>
                                 <th class="th-data" ><?php echo htmlspecialchars($row["name"]); ?></th>
                                 <th class="th-data" ><?php echo htmlspecialchars($row["lastName"]); ?></th>
                                 <th class="th-data" ><?php echo htmlspecialchars($row["email"]); ?></th>
                             </tr>
-                        <?php endwhile; ?>
+                        <?php }; ?>
                     </tbody>
                 </table>
             <?php else: ?>
-                <p>Error en la consulta: <?php echo mysqli_error($connect); ?></p>
+                <p>Query error: <?php echo mysqli_error($connect); ?></p>
             <?php endif; ?>
         </article>
     </main>

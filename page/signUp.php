@@ -18,21 +18,33 @@
   <header class="header">
     <div class="content-icon-nav">
       <div>
-        <a class="icon-inic" href="#">CAC-Movies</a>
+        <a class="icon-inic" href="#">CAC-MOVIES</a>
       </div>
+
       <nav class="nav-header">
         <ul>
-          <ul>
-            <li>
-              <a href="./api.html">Api</a>
-            </li>
-            <li>
-              <a href="../index.html">home</a>
-            </li>
-            <li class="li-inic-header">
-              <a class="ancor-inic-header" href="./signIn.html">Sign In</a>
-            </li>
-          </ul>
+          <li class="li-inic-header">
+            <a class="ancor-inic-header" href="./signIn.html">Sign In</a>
+          </li>
+          <li class="li-inic-header">
+            <a class="ancor-inic-header" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content-secont-nav">
+      <nav class="nav-header">
+        <ul>
+          <li>
+            <a class="ancor-sec-header" href="../index.html">Home</a>
+          </li>
+          <li>
+            <a class="ancor-sec-header" href="./api.html">Api</a>
+          </li>
+          <li>
+            <a class="ancor-sec-header" href="./usersTable.php">Table</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
