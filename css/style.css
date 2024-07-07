@@ -1,5 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
 /* modelos */
 /* eventos fondo */
+/*------------------------------ header */
+header {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  background: #9f3647;
+  justify-content: space-around;
+}
+
+.content-icon-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.content-icon-nav nav {
+  display: flex;
+  flex-grow: 0;
+}
+
+.content-icon-nav div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-secont-nav {
+  display: flex;
+  border-top: 1px solid #ffffff;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.nav-header ul {
+  display: flex;
+}
+
+.nav-header ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.ancor-inic-header {
+  /*   background-color: rgba(0, 0, 0, 0.244); */
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 2rem;
+  color: #ffffff;
+}
+
+.ancor-inic-header:hover {
+  color: rgba(255, 255, 255, 0.5764705882);
+}
+
+.icon-inic {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.ancor-sec-header {
+  text-decoration: none;
+  margin: 2rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.ancor-sec-header:hover {
+  color: rgba(255, 255, 255, 0.5764705882);
+}
+
 .content-section-api {
   display: flex;
   width: 100%;
@@ -18,8 +102,9 @@
   border-radius: 1rem;
   margin: 2rem 0rem;
   -webkit-backdrop-filter: blur(0.5px);
-          backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.5px);
 }
+
 .content-card-api div div {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -28,6 +113,7 @@
   margin: 1rem 0rem;
   height: 14%;
 }
+
 .content-card-api div div p:nth-last-child(3) {
   background-color: rgb(61, 27, 194);
   color: white;
@@ -37,6 +123,7 @@
   text-align: center;
   font-size: 0.7rem;
 }
+
 .content-card-api div div p:nth-last-child(2) {
   background-color: rgba(33, 182, 251, 0.874);
   color: white;
@@ -46,6 +133,7 @@
   text-align: center;
   font-size: 0.7rem;
 }
+
 .content-card-api div div p:nth-last-child(1) {
   grid-column: 1/3;
   color: white;
@@ -87,7 +175,7 @@ table {
   background-color: rgba(94, 94, 94, 0.203);
 }
 
-thead > tr > th {
+thead>tr>th {
   margin-left: 2rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2rem;
@@ -95,67 +183,16 @@ thead > tr > th {
   height: 50%;
 }
 
-thead > tr {
+thead>tr {
   background-color: #9f3647;
 }
 
-tbody > tr > th {
+tbody>tr>th {
   color: white;
 }
 
 .th-data {
   font-size: 0.8rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-}
-
-header {
-  display: flex;
-  height: 10vh;
-  background: #9f3647;
-}
-
-/*------------------------------ header */
-.content-icon-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0rem 4rem 0rem 4rem;
-}
-
-.nav-header ul {
-  display: flex;
-}
-
-.nav-header ul li {
-  text-decoration: none;
-  list-style: none;
-}
-
-.nav-header ul li a {
-  text-decoration: none;
-  margin: 2rem;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.ancor-inic-header {
-  background-color: black;
-  padding: 0.7rem;
-  border-radius: 0.5rem;
-}
-
-.icon-inic {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.3rem;
 }
 
 /*------------------------------ main parte 1*/
@@ -308,15 +345,24 @@ footer {
 }
 
 .colored-toast {
-  background: linear-gradient(to right, #6441a5, #2a0845) !important;
+  /*   background: linear-gradient(to right, #6441a5, #2a0845) !important; */
+  background: linear-gradient(to left, rgba(19, 21, 22, 0.8235294118) 97%, rgb(199, 0, 0) 3%) !important;
   color: white;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 0.7rem;
+  border: 0.3px solid rgba(255, 255, 255, 0.32);
+}
 
-.error{
+.text-alert {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.error {
   background-color: rgb(211, 120, 120);
   color: black;
   padding: 10px;
   width: 95%;
-  border-radius:5px;
+  border-radius: 5px;
   margin: 20px auto;
 }

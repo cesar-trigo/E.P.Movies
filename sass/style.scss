@@ -1,58 +1,11 @@
+@use "normalizar";
 @use "variables";
+@use "header";
 @use "api";
 @use "usertable";
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-}
 
-header {
-  display: flex;
-  height: 10vh;
-  background: #9f3647;
-}
-
-/*------------------------------ header */
-.content-icon-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0rem 4rem 0rem 4rem;
-}
-
-.nav-header ul {
-  display: flex;
-}
-
-.nav-header ul li {
-  text-decoration: none;
-  list-style: none;
-}
-
-.nav-header ul li a {
-  text-decoration: none;
-  margin: 2rem;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.ancor-inic-header {
-  background-color: black;
-  padding: .7rem;
-  border-radius: .5rem;
-}
-
-.icon-inic {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.3rem;
-}
 
 /*------------------------------ main parte 1*/
 
@@ -207,6 +160,13 @@ footer {
 }
 
 .colored-toast {
-  background: linear-gradient(to right, #6441a5, #2a0845) !important;
+  /*   background: linear-gradient(to right, #6441a5, #2a0845) !important; */
+  background: linear-gradient(to left, #131516d2 97%, rgb(199, 0, 0) 3%) !important;
   color: white;
+  font-size: .7rem;
+  border: .3px solid rgba(255, 255, 255, 0.32);
+}
+
+.text-alert {
+  color: #ffffff;
 }
