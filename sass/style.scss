@@ -160,6 +160,13 @@ footer {
 }
 
 .colored-toast {
-  background: linear-gradient(to right, #6441a5, #2a0845) !important;
+  /*   background: linear-gradient(to right, #6441a5, #2a0845) !important; */
+  background: linear-gradient(to left, #131516d2 97%, rgb(199, 0, 0) 3%) !important;
   color: white;
+  font-size: .7rem;
+  border: .3px solid rgba(255, 255, 255, 0.32);
+}
+
+.text-alert {
+  color: #ffffff;
 }
