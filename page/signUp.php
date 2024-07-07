@@ -56,7 +56,7 @@
           <!-- msj de error y success -->
           <?php 
             if (isset($_GET['error'])) { ?>
-                <p class="error"><?php echo $_GET['error']; ?></p>
+                <p id="error" class="error"><?php echo $_GET['error']; ?></p>
           <?php } ?>
           
           <label for="name">Name</label>
@@ -82,6 +82,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/form.js"></script>
 </body>
 
 </html>
