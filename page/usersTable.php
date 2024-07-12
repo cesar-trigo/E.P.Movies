@@ -77,13 +77,14 @@
         </article>
     </main>
     <footer>
-        <div class="content-footer">
-            <a class="icon-inic" href="#">Terms and Conditions</a>
-            <a class="icon-inic" href="#">Frequent questions</a>
-            <a class="icon-inic" href="#">Ayuda</a>
-            <a class="ancor-inic-header a-footer" href="#">Movie Manager</a>
-        </div>
-    </footer>
+    <div class="content-footer">
+      <a class="a-footer" href="#">Terms and Conditions</a>
+      <a class="a-footer" href="#">Frequent questions</a>
+      <a class="a-footer" href="#">
+        Ayuda</a>
+      <a class="a-footer" href="#">Movie Manager</a>
+    </div>
+  </footer>
     <script src="../js/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
