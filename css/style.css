@@ -208,13 +208,19 @@ tbody>tr>th {
 }
 
 .content-title-dem {
-  height: 90vh;
+  min-height: 110vh;
   background: linear-gradient(to right top, #0000008a, #0000008a), url(https://giselemilagros88.github.io/cac_movies_javaphp/assets/img/banner-bg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+}
+
+.content-index {
+  flex-direction: column;
+  text-align: center;
 }
 
 h1 {
@@ -227,38 +233,44 @@ h1 {
   color: #ffffff;
   margin: 2rem;
 }
-.register-login{
+
+.register-login {
   width: 50vh;
   border: 2px solid black;
   padding: 6rem;
   background-color: rgba(0, 0, 0, 0.8);
-  border:none;
+  border: none;
   border-radius: 20px;
   color: aliceblue;
 }
-.register-login h2{
+
+.register-login h2 {
   text-align: center;
   padding-bottom: 15%;
 
 }
-.register-login label{
+
+.register-login label {
   text-align: start;
   color: aliceblue;
   font-size: 18px;
   padding: 15px;
   font-weight: 300;
 }
-.register-login input{
+
+.register-login input {
   display: block;
   border: 1px solid black;
   width: 95%;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
   border-radius: 10px;
 }
-.button-container{
+
+.button-container {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 /*------------------------------ main parte 2*/
@@ -284,30 +296,18 @@ button {
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-}
-
-.div-input-btn {
-  margin-top: 3rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.search {
-  text-decoration: none;
-  border: none;
-  height: 3rem;
-  width: 25rem;
-  border-radius: 2rem;
-}
-
-.btn-input {
   color: #ffffff;
-  margin-top: 0rem;
-  font-size: 1.5rem;
+}
+
+button {
+  color: #ffffff;
+  margin-top: 3rem;
+  font-size: 1rem;
   background-color: #9f3647;
-  border-radius: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   border: none;
-  text-align: center;
+  cursor: pointer;
 }
 
 /*------------------------------ main parte 2*/
