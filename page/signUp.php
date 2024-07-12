@@ -51,7 +51,7 @@
   <main class="main-index">
     <article class="content-section">
       <section class="content-title-dem">
-        <form id="login" action="../php/login-register/register.php" method="POST">
+        <form  class="register-login" id="login" action="../php/login-register/register.php" method="POST">
           <h2 class="h1">Sign up</h2>
           <!-- msj de error y success -->
           <?php 
@@ -67,7 +67,9 @@
           <input type="email" name="email" id="email" placeholder="Email">
           <label for="password">Password</label>
           <input type="password" name="password" id="password" placeholder="Password">
-          <button type="submit">Sign up</button>
+          <div class="button-container">
+            <button type="submit">Sign up</button>
+          </div>
         </form>
       </section>
     </article>
