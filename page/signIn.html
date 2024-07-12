@@ -51,12 +51,14 @@
   <main class="main-index">
     <article class="content-section">
       <section class="content-title-dem">
-        <form id="login" action="">
+        
+        <form id="login" action="login.php" method="post">
+
           <h2 class="h1">Sing In</h2>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="Password">
+          <input type="password" name="password" id="password" placeholder="Password" required>
           <button type="submit">Sing In</button>
         </form>
       </section>
