@@ -209,14 +209,12 @@ tbody>tr>th {
 
 .content-title-dem {
   height: 90vh;
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.5411764706), rgba(0, 0, 0, 0.5411764706)), url(https://giselemilagros88.github.io/cac_movies_javaphp/assets/img/banner-bg.jpg);
+  background: linear-gradient(to right top, #0000008a, #0000008a), url(https://giselemilagros88.github.io/cac_movies_javaphp/assets/img/banner-bg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 h1 {
@@ -228,6 +226,39 @@ h1 {
   font-size: 1.5rem;
   color: #ffffff;
   margin: 2rem;
+}
+.register-login{
+  width: 50vh;
+  border: 2px solid black;
+  padding: 6rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border:none;
+  border-radius: 20px;
+  color: aliceblue;
+}
+.register-login h2{
+  text-align: center;
+  padding-bottom: 15%;
+
+}
+.register-login label{
+  text-align: start;
+  color: aliceblue;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: 300;
+}
+.register-login input{
+  display: block;
+  border: 1px solid black;
+  width: 95%;
+  padding: 10px;
+  margin:10px;
+  border-radius: 10px;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
 }
 
 /*------------------------------ main parte 2*/
@@ -252,6 +283,7 @@ button {
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
+  cursor: pointer;
 }
 
 .div-input-btn {
