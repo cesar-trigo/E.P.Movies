@@ -29,6 +29,9 @@
           <li class="li-inic-header">
             <a class="ancor-inic-header" href="#">Sign Up</a>
           </li>
+          <li class="li-inic-header">
+            <a class="ancor-inic-header" href="../php/logout.php">Logout</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -43,6 +46,9 @@
           </li>
           <li>
             <a class="ancor-sec-header" href="./usersTable.php">Table</a>
+          </li>
+          <li>
+            <a class="ancor-sec-header" href="./editUser.php">Edit User</a>
           </li>
         </ul>
       </nav>
@@ -76,11 +82,11 @@
   </main>
   <footer>
     <div class="content-footer">
-      <a class="icon-inic" href="#">Terms and Conditions</a>
-      <a class="icon-inic" href="#">Frequent questions</a>
-      <a class="icon-inic" href="#">
+      <a class="a-footer" href="#">Terms and Conditions</a>
+      <a class="a-footer" href="#">Frequent questions</a>
+      <a class="a-footer" href="#">
         Ayuda</a>
-      <a class="ancor-inic-header a-footer" href="#">Movie Manager</a>
+      <a class="a-footer" href="#">Movie Manager</a>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

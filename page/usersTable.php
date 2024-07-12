@@ -27,6 +27,9 @@
           <li class="li-inic-header">
             <a class="ancor-inic-header" href="./signUp.php">Sign Up</a>
           </li>
+          <li class="li-inic-header">
+            <a class="ancor-inic-header" href="../php/logout.php">Logout</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -41,6 +44,9 @@
           </li>
           <li>
             <a class="ancor-sec-header" href="#">Table</a>
+          </li>
+          <li>
+            <a class="ancor-sec-header" href="./editUser.php">Edit User</a>
           </li>
         </ul>
       </nav>
@@ -57,8 +63,8 @@
                         <tr>
                             <th>Name</th>
                             <th>Last Name</th>
-                            <th>Email</th>
-
+                            <th>Email</th> 
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,6 +73,7 @@
                                 <th class="th-data" ><?php echo htmlspecialchars($row["name"]); ?></th>
                                 <th class="th-data" ><?php echo htmlspecialchars($row["lastName"]); ?></th>
                                 <th class="th-data" ><?php echo htmlspecialchars($row["email"]); ?></th>
+                                <th class="th-data" ><a href="../php/deleteUser.php?id=<?php echo $row['id']; ?>">&#10060;</a></th>
                             </tr>
                         <?php }; ?>
                     </tbody>
@@ -77,13 +84,14 @@
         </article>
     </main>
     <footer>
-        <div class="content-footer">
-            <a class="icon-inic" href="#">Terms and Conditions</a>
-            <a class="icon-inic" href="#">Frequent questions</a>
-            <a class="icon-inic" href="#">Ayuda</a>
-            <a class="ancor-inic-header a-footer" href="#">Movie Manager</a>
-        </div>
-    </footer>
+    <div class="content-footer">
+      <a class="a-footer" href="#">Terms and Conditions</a>
+      <a class="a-footer" href="#">Frequent questions</a>
+      <a class="a-footer" href="#">
+        Ayuda</a>
+      <a class="a-footer" href="#">Movie Manager</a>
+    </div>
+  </footer>
     <script src="../js/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
